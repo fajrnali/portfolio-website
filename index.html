@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fajr Noushad Ali — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Model Viewer CDN -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo">FNA</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#internships">Internships</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-grain"></div>
+    <div class="hero-decor decor-1"></div>
+    <div class="hero-decor decor-2"></div>
+    <div class="hero-decor decor-3"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Electrical Engineer · Dubai, UAE</p>
+      <h1 class="hero-name">
+        <span class="name-first">Fajr</span>
+        <span class="name-last">Noushad Ali</span>
+      </h1>
+      <p class="hero-tagline">
+        Specialising in <em>Artificial Intelligence</em>,<br />
+        Embedded Systems &amp; Energy Systems.
+      </p>
+      <p class="hero-sub">
+        Magna Cum Laude · Dean's List · IEEE Chapter President · Award-winning Innovator · Available for full-time employment
+      </p>
+      <div class="hero-ctas">
+        <a href="https://www.linkedin.com/in/fajrnoushadali/" target="_blank" class="btn btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://drive.google.com/file/d/1C0wJJ5SyJyCNg3PDzMDbvIQUO4bOYbab/view?usp=sharing" target="_blank" class="btn btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring"></div>
+      <img src="assets/profile.jpg" alt="Fajr Noushad Ali" class="hero-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="hero-photo-placeholder">
+        <span>FNA</span>
+        <small>Drop assets/profile.jpg here</small>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       INTERNSHIPS
+  ══════════════════════════════════════════ -->
+  <section id="internships" class="section">
+    <div class="section-header">
+      <span class="section-label">01</span>
+      <h2 class="section-title">Internship Experience</h2>
+    </div>
+
+    <div class="internship-grid">
+
+      <!-- Card 1: McDermott -->
+      <article class="intern-card" data-modal="modal-mcdermott">
+        <div class="card-image-wrap">
+          <img src="assets/mcdermott.jpg" alt="McDermott" class="card-img" onerror="this.style.display='none'" />
+          <div class="card-img-placeholder">
+            <span></span>
+            <small>assets/mcdermott.jpg</small>
+          </div>
+          <div class="card-tag">July 2025 – Sep 2025</div>
+        </div>
+        <div class="card-body">
+          <p class="card-company">McDermott Middle East, Inc.</p>
+          <h3 class="card-role">Production Engineering Intern</h3>
+          <p class="card-location">📍 Dubai, UAE</p>
+          <p class="card-summary">Supported an offshore project (WHT &amp; WIP) through technical planning &amp; site inspections, while spearheading a strategic AI initiative for ADNOC.</p>
+          <button class="btn-expand">View Details <span>→</span></button>
+        </div>
+      </article>
+
+      <!-- Card 2: Fractal Systems -->
+      <article class="intern-card" data-modal="modal-fractal">
+        <div class="card-image-wrap">
+          <img src="assets/fractal.jpg" alt="Fractal Systems" class="card-img" onerror="this.style.display='none'" />
+          <div class="card-img-placeholder">
+            <span></span>
+            <small>assets/fractal.jpg</small>
+          </div>
+          <div class="card-tag">Jan 2024 – July 2024</div>
+        </div>
+        <div class="card-body">
+          <p class="card-company">Fractal Systems</p>
+          <h3 class="card-role">Engineering Intern</h3>
+          <p class="card-location">📍 Dubai, UAE</p>
+          <p class="card-summary">Event technology company driving brand experiences through kinetic structures and novel technologies at GITEX and ArabHEALTH.</p>
+          <button class="btn-expand">View Details <span>→</span></button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       RESEARCH
+  ══════════════════════════════════════════ -->
+  <section id="research" class="section section-dark">
+    <div class="section-header">
+      <span class="section-label">02</span>
+      <h2 class="section-title">Research Paper</h2>
+    </div>
+
+    <div class="research-showcase">
+      <div class="research-text">
+        <span class="research-badge">In Process of Publishing — IEEE Access</span>
+        <h3 class="research-title">Explainable AI in Autonomous Driving</h3>
+        <p class="research-subtitle">A Comparative Study of Post-Hoc Explanations for YOLOv8</p>
+        <p class="research-desc">
+          A comparative study on Explainable AI for autonomous driving to improve the transparency of "black-box" image classifiers using Computer Vision techniques.
+        </p>
+        <ul class="research-bullets">
+          <li>Engineered a unified dataset by fusing heterogeneous sources using an LCD mapping strategy</li>
+          <li>Analyzed model performance using F1-score, Sensitivity, Faithfulness, and visual analysis between xAI methods (CAM, LRP, etc.)</li>
+          <li>Developed a framework for "Trustworthy AI" by analyzing how post-hoc explanations debug and verify deep neural networks</li>
+        </ul>
+        <div class="research-tags">
+          <span class="pill">Computer Vision</span>
+          <span class="pill">YOLOv8</span>
+          <span class="pill">Explainable AI</span>
+          <span class="pill">PyTorch</span>
+          <span class="pill">Deep Learning</span>
+        </div>
+      </div>
+
+      <div class="research-visual">
+        <!-- 3D Model Viewer — drop your .glb into assets/ -->
+        <model-viewer
+          src="assets/xai_model.glb"
+          alt="XAI 3D visualization"
+          auto-rotate
+          camera-controls
+          shadow-intensity="1"
+          style="width:100%;height:340px;border-radius:20px;background:transparent;"
+          poster="assets/xai_poster.jpg">
+          <!-- Fallback if no model -->
+          <div slot="error" class="model-fallback">
+            <div class="model-placeholder">
+              <div class="model-grid"></div>
+              <p>Drop <code>assets/xai_model.glb</code> here</p>
+              <p class="model-sub">or use <code>assets/xai_poster.jpg</code> as poster</p>
+            </div>
+          </div>
+        </model-viewer>
+
+        <!-- Interactive diagram placeholder -->
+        <div class="diagram-row">
+          <div class="diagram-box">
+            <img src="assets/xai_diagram1.jpg" alt="XAI Diagram 1" onerror="this.parentElement.classList.add('placeholder')" />
+            <span>CAM Heatmap</span>
+          </div>
+          <div class="diagram-box">
+            <img src="assets/xai_diagram2.jpg" alt="XAI Diagram 2" onerror="this.parentElement.classList.add('placeholder')" />
+            <span>Live Model Test</span>
+          </div>
+          <div class="diagram-box">
+            <img src="assets/xai_diagram3.jpg" alt="XAI Diagram 3" onerror="this.parentElement.classList.add('placeholder')" />
+            <span>SHAP Values</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════════ -->
+  <section id="projects" class="section">
+    <div class="section-header">
+      <span class="section-label">03</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+
+    <div class="projects-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ai">AI / ML</button>
+      <button class="filter-btn" data-filter="embedded">Embedded</button>
+      <button class="filter-btn" data-filter="energy">Energy</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="proj-card" data-filter="embedded" data-modal="modal-blister">
+        <div class="proj-card-top">
+          <span class="proj-icon">💊</span>
+          <span class="proj-cat">Embedded · Healthcare</span>
+        </div>
+        <img src="assets/blister.jpg" alt="Smart Blister Pack" class="proj-img" onerror="this.style.display='none'" />
+        <h4 class="proj-title">Smart Blister Pack</h4>
+        <p class="proj-short">IoT medication adherence solution — Winner, Healthcare Innovation Bootcamp 2026</p>
+        <div class="proj-footer">
+          <span class="proj-date">Feb 2026</span>
+          <button class="btn-expand-sm">Expand →</button>
+        </div>
+      </article>
+
+      <article class="proj-card" data-filter="embedded" data-modal="modal-hexapod">
+        <div class="proj-card-top">
+          <span class="proj-icon">🤖</span>
+          <span class="proj-cat">Embedded · Robotics</span>
+        </div>
+        <img src="assets/hexapod.jpg" alt="Hexapod Robot" class="proj-img" onerror="this.style.display='none'" />
+        <h4 class="proj-title">Hexapod Security Robot</h4>
+        <p class="proj-short">Autonomous hexapod with wireless connectivity for optimised navigation &amp; control</p>
+        <div class="proj-footer">
+          <span class="proj-date">Apr – Aug 2023</span>
+          <button class="btn-expand-sm">Expand →</button>
+        </div>
+      </article>
+
+      <article class="proj-card" data-filter="embedded" data-modal="modal-yas">
+        <div class="proj-card-top">
+          <span class="proj-icon">🏆</span>
+          <span class="proj-cat">Embedded · Automotive</span>
+        </div>
+        <img src="assets/yas4x4.jpg" alt="YASinSchools 4x4" class="proj-img" onerror="this.style.display='none'" />
+        <h4 class="proj-title">YASinSchools 4x4</h4>
+        <p class="proj-short">University Champions · Most Innovative Design · Best Verbal Presentation at YAS Island</p>
+        <div class="proj-footer">
+          <span class="proj-date">Apr 2022 – Apr 2023</span>
+          <button class="btn-expand-sm">Expand →</button>
+        </div>
+      </article>
+
+      <article class="proj-card" data-filter="energy" data-modal="modal-office">
+        <div class="proj-card-top">
+          <span class="proj-icon">🏢</span>
+          <span class="proj-cat">Energy · Smart Systems</span>
+        </div>
+        <img src="assets/office.jpg" alt="Smart Office" class="proj-img" onerror="this.style.display='none'" />
+        <h4 class="proj-title">Smart Sustainable Secure Office</h4>
+        <p class="proj-short">DIEZ-funded R&amp;D for a smart off-grid portable and scalable office infrastructure</p>
+        <div class="proj-footer">
+          <span class="proj-date">Sep 2025 – May 2026</span>
+          <button class="btn-expand-sm">Expand →</button>
+        </div>
+      </article>
+
+      <article class="proj-card" data-filter="energy" data-modal="modal-monaco">
+        <div class="proj-card-top">
+          <span class="proj-icon">⛵</span>
+          <span class="proj-cat">Energy · Marine</span>
+        </div>
+        <img src="assets/monaco.jpg" alt="Monaco Energy Boat" class="proj-img" onerror="this.style.display='none'" />
+        <h4 class="proj-title">Monaco Energy Boat Challenge</h4>
+        <p class="proj-short">Solar array &amp; hydrogen fuel cell powertrain for international racing boat competition</p>
+        <div class="proj-footer">
+          <span class="proj-date">Sep – Dec 2022</span>
+          <button class="btn-expand-sm">Expand →</button>
+        </div>
+      </article>
+
+      <article class="proj-card" data-filter="energy" data-modal="modal-fsae">
+        <div class="proj-card-top">
+          <span class="proj-icon">🏎️</span>
+          <span class="proj-cat">Energy · Automotive</span>
+        </div>
+        <img src="assets/fsae.jpg" alt="Formula SAE" class="proj-img" onerror="this.style.display='none'" />
+        <h4 class="proj-title">Formula SAE Electric</h4>
+        <p class="proj-short">Electric racing vehicle from scratch for Michigan International Speedway competition</p>
+        <div class="proj-footer">
+          <span class="proj-date">Nov 2021 – Apr 2022</span>
+          <button class="btn-expand-sm">Expand →</button>
+        </div>
+      </article>
+
+      <article class="proj-card" data-filter="ai" data-modal="modal-mastercard">
+        <div class="proj-card-top">
+          <span class="proj-icon">💳</span>
+          <span class="proj-cat">AI / ML · Fintech</span>
+        </div>
+        <img src="assets/mastercard.jpg" alt="MasterCard AI" class="proj-img" onerror="this.style.display='none'" />
+        <h4 class="proj-title">MasterCard AI Exploration</h4>
+        <p class="proj-short">Credit card fraud detection using ML — decision trees, SVM, logistic regression &amp; NLP</p>
+        <div class="proj-footer">
+          <span class="proj-date">Sep – Dec 2023</span>
+          <button class="btn-expand-sm">Expand →</button>
+        </div>
+      </article>
+
+      <article class="proj-card proj-placeholder" data-modal="modal-placeholder">
+        <div class="proj-card-top">
+          <span class="proj-icon">✦</span>
+          <span class="proj-cat">Coming Soon</span>
+        </div>
+        <h4 class="proj-title">Next Project</h4>
+        <p class="proj-short"><!--This space is reserved for your next venture. Drop in your assets and update the modal below!--></p>
+        <div class="proj-footer">
+          <span class="proj-date">—</span>
+          <button class="btn-expand-sm">Expand →</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       LEADERSHIP
+  ══════════════════════════════════════════ -->
+  <section id="leadership" class="section section-warm">
+    <div class="section-header">
+      <span class="section-label">04</span>
+      <h2 class="section-title">Leadership</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Nov 2024</div>
+        <div class="timeline-card">
+          <div class="timeline-icon"></div>
+          <div class="timeline-body">
+            <h4>Talent 2033 — DGHR Delegate</h4>
+            <p class="timeline-org">Dubai Government Human Resource Department</p>
+            <p>Contributed to a session on advancing Dubai's education sector, proposing strategies to attract global talent, with recommendations influencing government policies.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Sep 2021 – Sep 2023</div>
+        <div class="timeline-card">
+          <div class="timeline-icon"></div>
+          <div class="timeline-body">
+            <h4>IEEE Student Chapter — President &amp; Event Manager</h4>
+            <p class="timeline-org">Rochester Institute of Technology</p>
+            <p>Coordinated speaker sessions with Emerson, organised scholastic trips to Expo 2020 and MBR Solar Park, and facilitated in-house events like International Women's Day and Expo Treasure Hunt.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Apr 2023</div>
+        <div class="timeline-card">
+          <div class="timeline-icon"></div>
+          <div class="timeline-body">
+            <h4>Imagine RIT Innovation Festival — Lead Exhibitor</h4>
+            <p class="timeline-org">Rochester, New York, USA</p>
+            <p>Selected by an independent committee to represent RIT Dubai in New York, designing an exhibition stand and delivering a compelling presentation to the University President and FOX News.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SKILLS & CERTS
+  ══════════════════════════════════════════ -->
+  <section id="skills" class="section">
+    <div class="section-header">
+      <span class="section-label">05</span>
+      <h2 class="section-title">Skills &amp; Certificates</h2>
+    </div>
+
+    <div class="skills-layout">
+      <div class="skills-col">
+        <h3 class="skills-cat-title">Programming</h3>
+        <div class="pills-row">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">C / C++</span>
+          <span class="skill-pill">MATLAB</span>
+        </div>
+
+        <h3 class="skills-cat-title">AI / Machine Learning</h3>
+        <div class="pills-row">
+          <span class="skill-pill">PyTorch</span>
+          <span class="skill-pill">Scikit-learn</span>
+          <span class="skill-pill">OpenCV</span>
+          <span class="skill-pill">YOLOv8</span>
+        </div>
+
+        <h3 class="skills-cat-title">Embedded Systems</h3>
+        <div class="pills-row">
+          <span class="skill-pill">Arduino</span>
+          <span class="skill-pill">ESP32</span>
+          <span class="skill-pill">PCB Design</span>
+          <span class="skill-pill">EasyEDA</span>
+        </div>
+
+        <h3 class="skills-cat-title">Design &amp; Engineering</h3>
+        <div class="pills-row">
+          <span class="skill-pill">SOLIDWORKS</span>
+          <span class="skill-pill">Autodesk Inventor</span>
+          <span class="skill-pill">Power Systems</span>
+          <span class="skill-pill">Control Systems</span>
+          <span class="skill-pill">Energy Management</span>
+        </div>
+      </div>
+
+      <div class="certs-col">
+        <h3 class="skills-cat-title">Industry Certifications</h3>
+        <div class="cert-list">
+          <div class="cert-card">
+            <div class="cert-icon">⚡</div>
+            <div>
+              <p class="cert-name">Smart Grid Analysis</p>
+              <p class="cert-org">Lucas Nulle GmbH</p>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🔌</div>
+            <div>
+              <p class="cert-name">Global Student Experience — Services Track</p>
+              <p class="cert-org">Schneider Electric</p>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🏭</div>
+            <div>
+              <p class="cert-name">Technical Session</p>
+              <p class="cert-org">Dubai Euro Group SwitchGear</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="skills-cat-title" style="margin-top:2rem;">Education</h3>
+        <div class="cert-card cert-edu">
+          <div class="cert-icon">🎓</div>
+          <div>
+            <p class="cert-name">B.S. in Electrical Engineering — 3.60 / 4.00</p>
+            <p class="cert-org">Rochester Institute of Technology · Sep 2021 – May 2026</p>
+            <p class="cert-sub">Dean's List · 6 Semesters</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <p class="footer-name">Fajr Noushad Ali</p>
+    <p class="footer-contact">
+      <a href="mailto:fajrnali@gmail.com">fajrnali@gmail.com</a> ·
+      <a href="tel:+971502383767">+971 50 2383 767</a> ·
+      <a href="https://www.linkedin.com/in/fajrnoushadali/" target="_blank">LinkedIn</a>
+    </p>
+    <p class="footer-copy">Designed &amp; developed with care · Dubai 2026</p>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       MODALS
+  ══════════════════════════════════════════════════════ -->
+  <div id="modal-overlay" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- Modal: McDermott -->
+  <template id="modal-mcdermott">
+    <div class="modal-inner">
+      <span class="modal-eyebrow">Internship · July 2025 – Sep 2025</span>
+      <h2>McDermott Middle East, Inc.</h2>
+      <p class="modal-role">Production Engineering Intern · Dubai, UAE</p>
+
+      <div class="modal-media">
+        <img src="assets/mcdermott.jpg" alt="McDermott" onerror="this.style.display='none'" />
+        <img src="assets/mcdermott2.jpg" alt="McDermott 2" onerror="this.style.display='none'" />
+        <video controls src="assets/mcdermott_video.mp4" onerror="this.style.display='none'"></video>
+      </div>
+
+      <h4>Overview</h4>
+      <p>Supported an offshore project (WHT &amp; WIP) for ADNOC through technical planning and site inspections, while spearheading a strategic AI initiative within the Production Engineering team.</p>
+
+      <h4>Key Contributions</h4>
+      <ul>
+        <li>Coordinated with the Production Engineering team on development of WHT &amp; WIP for ADNOC, ensuring technical compliance and standards.</li>
+        <li>Conducted on-site inspections across fabrication yards, ensuring compliance with engineering and safety standards.</li>
+        <li>Initiated the <em>'Accelerating AI Adoption in Fabrication Yards'</em> program to integrate automated monitoring and data analytics to enhance safety.</li>
+      </ul>
+
+      <div class="modal-tags">
+        <span class="pill">Offshore Engineering</span>
+        <span class="pill">ADNOC</span>
+        <span class="pill">AI Adoption</span>
+        <span class="pill">Site Inspection</span>
+        <span class="pill">Data Analytics</span>
+      </div>
+    </div>
+  </template>
+
+  <!-- Modal: Fractal -->
+  <template id="modal-fractal">
+    <div class="modal-inner">
+      <span class="modal-eyebrow">Internship · Jan 2024 – July 2024</span>
+      <h2>Fractal Systems</h2>
+      <p class="modal-role">Engineering Intern · Dubai, UAE</p>
+
+      <div class="modal-media">
+        <img src="assets/fractal.jpg" alt="Fractal Systems" onerror="this.style.display='none'" />
+        <img src="assets/fractal_gitex.jpg" alt="GITEX" onerror="this.style.display='none'" />
+        <video controls src="assets/fractal_video.mp4" onerror="this.style.display='none'"></video>
+      </div>
+
+      <h4>Overview</h4>
+      <p>An event technology company driving brand experiences through kinetic structures and novel technologies, with deployments at world-class events like GITEX and ArabHEALTH.</p>
+
+      <h4>Key Contributions</h4>
+      <ul>
+        <li>Researched and implemented new design ideas on-site for kinetic structures at GITEX and ArabHEALTH.</li>
+        <li>Collaborated with the engineering team to prototype designs for event technology clients using SOLIDWORKS and SOLIDWORKS Visualize.</li>
+        <li>Assisted in hardware preparation and systemic testing for efoils — an emerging sports technology.</li>
+      </ul>
+
+      <div class="modal-tags">
+        <span class="pill">Kinetic Structures</span>
+        <span class="pill">SOLIDWORKS</span>
+        <span class="pill">GITEX</span>
+        <span class="pill">ArabHEALTH</span>
+        <span class="pill">Prototyping</span>
+      </div>
+    </div>
+  </template>
+
+  <!-- Modal: Smart Blister Pack -->
+  <template id="modal-blister">
+    <div class="modal-inner">
+      <span class="modal-eyebrow">Embedded Systems · Feb 2026</span>
+      <h2>Smart Blister Pack</h2>
+      <p class="modal-role">Lead Embedded Systems Developer · DUBAI HEALTH Innovation Bootcamp</p>
+
+      <div class="modal-media">
+        <img src="assets/blister.jpg" alt="Smart Blister Pack" onerror="this.style.display='none'" />
+        <img src="assets/blister_pcb.jpg" alt="PCB Design" onerror="this.style.display='none'" />
+        <model-viewer src="assets/blister_model.glb" alt="Blister Pack 3D" auto-rotate camera-controls style="width:100%;height:280px;border-radius:12px;" poster="assets/blister_model_poster.jpg"></model-viewer>
+      </div>
+
+      <div class="modal-award"> WINNER — Healthcare Innovation &amp; Sustainability Bootcamp 2026</div>
+
+      <h4>Overview</h4>
+      <p>An IoT-integrated healthcare solution designed to monitor medication adherence by retrofitting existing blister packaging — targeting high-risk geriatric and chronic patients.</p>
+
+      <h4>Key Contributions</h4>
+      <ul>
+        <li>Engineered and manufactured a functional hardware prototype to automate dosage tracking.</li>
+        <li>Collaborated with doctoral researchers to translate medical requirements into hardware requirements and user-centric design logic.</li>
+        <li>Secured the Winner Position at the Healthcare Innovation &amp; Sustainability Bootcamp 2026.</li>
+      </ul>
+
+      <div class="modal-tags">
+        <span class="pill">IoT</span>
+        <span class="pill">ESP32</span>
+        <span class="pill">PCB Design</span>
+        <span class="pill">Healthcare</span>
+        <span class="pill">Geriatric Care</span>
+      </div>
+    </div>
+  </template>
+
+  <!-- Modal: Hexapod -->
+  <template id="modal-hexapod">
+    <div class="modal-inner">
+      <span class="modal-eyebrow">Embedded · Apr 2023 – Aug 2023</span>
+      <h2>Hexapod Security Robot</h2>
+      <p class="modal-role">Engineering Student Volunteer · AI &amp; Robotics Center, RIT Dubai</p>
+
+      <div class="modal-media">
+        <img src="assets/hexapod.jpg" alt="Hexapod Robot" onerror="this.style.display='none'" />
+        <img src="assets/hexapod2.jpg" alt="Hexapod Robot 2" onerror="this.style.display='none'" />
+        <model-viewer src="assets/hexapod_model.glb" alt="Hexapod 3D" auto-rotate camera-controls style="width:100%;height:280px;border-radius:12px;" poster="assets/hexapod_poster.jpg"></model-viewer>
+        <video controls src="assets/hexapod_video.mp4" onerror="this.style.display='none'"></video>
+      </div>
+
+      <h4>Overview</h4>
+      <p>Developed an autonomous hexapod robot with wireless connectivity for optimised navigation and control, featuring stable gait control and real-time object tracking.</p>
+
+      <h4>Key Contributions</h4>
+      <ul>
+        <li>Developed locomotion and tracking for the hexapod robot and established wireless connectivity to remote device.</li>
+        <li>Contributed to system-level integration of sensors and control logic for autonomous navigation.</li>
+        <li>Focused on stable gait control and real-time object tracking.</li>
+      </ul>
+
+      <div class="modal-tags">
+        <span class="pill">Robotics</span>
+        <span class="pill">Autonomous Navigation</span>
+        <span class="pill">Wireless Comms</span>
+        <span class="pill">Gait Control</span>
+        <span class="pill">C++</span>
+      </div>
+    </div>
+  </template>
+
+  <!-- Modal: YASinSchools -->
+  <template id="modal-yas">
+    <div class="modal-inner">
+      <span class="modal-eyebrow">Embedded · Apr 2022 – Apr 2023</span>
+      <h2>YASinSchools 4x4 Technology Competition</h2>
+      <p class="modal-role">Electrical Engineer Student · YAS Island, Abu Dhabi</p>
+
+      <div class="modal-media">
+        <img src="assets/yas4x4.jpg" alt="YASinSchools 4x4" onerror="this.style.display='none'" />
+        <img src="assets/yas4x4_2.jpg" alt="YASinSchools 4x4 2" onerror="this.style.display='none'" />
+        <video controls src="assets/yas_video.mp4" onerror="this.style.display='none'"></video>
+      </div>
+
+      <div class="modal-award"> Overall University Champions · Most Innovative Design · Best Verbal Presentation · RIT New York Imagine RIT Presentation</div>
+
+      <h4>Overview</h4>
+      <p>Designed and implemented an innovative vehicle system to tackle harsh off-road terrains and compete at YAS Island, Abu Dhabi.</p>
+
+      <h4>Key Contributions</h4>
+      <ul>
+        <li>Contributed to the redesign of the car's remote, incorporating advanced features and customisable settings for improved user experience.</li>
+        <li>Delivered presentations to media outlet FOX News and the Rochester public showcasing the team's innovative solutions.</li>
+      </ul>
+
+      <div class="modal-tags">
+        <span class="pill">Off-Road</span>
+        <span class="pill">Vehicle Systems</span>
+        <span class="pill">Remote Control</span>
+        <span class="pill">Hardware Design</span>
+      </div>
+    </div>
+  </template>
+
+  <!-- Modal: Smart Office -->
+  <template id="modal-office">
+    <div class="modal-inner">
+      <span class="modal-eyebrow">Energy Systems · Sep 2025 – May 2026</span>
+      <h2>Smart Sustainable Secure Office</h2>
+      <p class="modal-role">Lead Energy Engineer · Senior Design Project (DIEZ-funded)</p>
+
+      <div class="modal-media">
+        <img src="assets/office.jpg" alt="Smart Office" onerror="this.style.display='none'" />
+        <img src="assets/office_schematic.jpg" alt="EMS Schematic" onerror="this.style.display='none'" />
+        <model-viewer src="assets/office_model.glb" alt="Office 3D" auto-rotate camera-controls style="width:100%;height:280px;border-radius:12px;" poster="assets/office_poster.jpg"></model-viewer>
+        <video controls src="assets/office_video.mp4" onerror="this.style.display='none'"></video>
+      </div>
+
+      <h4>Overview</h4>
+      <p>A research and development initiative funded by DIEZ to design a smart off-grid portable and scalable office infrastructure.</p>
+
+      <h4>Key Contributions</h4>
+      <ul>
+        <li>Developed the logic and program for the Energy Management System (EMS) to automate load balancing and renewable energy integration.</li>
+        <li>Produced 3D schematics and system architectures using Autodesk Inventor.</li>
+        <li>Performed systemic testing and logic validation to ensure stability of the power control unit under varying demand scenarios.</li>
+      </ul>
+
+      <div class="modal-tags">
+        <span class="pill">Energy Management</span>
+        <span class="pill">Off-Grid</span>
+        <span class="pill">Autodesk Inventor</span>
+        <span class="pill">DIEZ</span>
+        <span class="pill">Renewables</span>
+      </div>
+    </div>
+  </template>
+
+  <!-- Modal: Monaco -->
+  <template id="modal-monaco">
+    <div class="modal-inner">
+      <span class="modal-eyebrow">Energy Systems · Sep – Dec 2022</span>
+      <h2>Monaco Energy Boat Challenge</h2>
+      <p class="modal-role">Electrical Engineer — Powertrain · Sailing Tigers RIT</p>
+
+      <div class="modal-media">
+        <img src="assets/monaco.jpg" alt="Monaco Boat" onerror="this.style.display='none'" />
+        <img src="assets/monaco_solar.jpg" alt="Solar Array" onerror="this.style.display='none'" />
+        <video controls src="assets/monaco_video.mp4" onerror="this.style.display='none'"></video>
+      </div>
+
+      <h4>Overview</h4>
+      <p>Student-led competition team developing a sustainable racing boat for the international Monaco Energy Boat Challenge (Energy Class).</p>
+
+      <h4>Key Contributions</h4>
+      <ul>
+        <li>Designed and integrated a 2.5 m² solar array into the vessel's powertrain to supplement the 10 kWh primary energy storage limit.</li>
+        <li>Conducted research on hydrogen fuel cell integration, focusing on ventilation systems and pressure relief protocols.</li>
+        <li>Collaborated on the development of the high-voltage electrical architecture.</li>
+      </ul>
+
+      <div class="modal-tags">
+        <span class="pill">Solar Array</span>
+        <span class="pill">Hydrogen Fuel Cell</span>
+        <span class="pill">Marine Engineering</span>
+        <span class="pill">High-Voltage Systems</span>
+      </div>
+    </div>
+  </template>
+
+  <!-- Modal: Formula SAE -->
+  <template id="modal-fsae">
+    <div class="modal-inner">
+      <span class="modal-eyebrow">Energy Systems · Nov 2021 – Apr 2022</span>
+      <h2>Formula SAE Electric</h2>
+      <p class="modal-role">Electrical Engineer · RIT Dubai Autosport</p>
+
+      <div class="modal-media">
+        <img src="assets/fsae.jpg" alt="Formula SAE" onerror="this.style.display='none'" />
+        <img src="assets/fsae_pcb.jpg" alt="FSAE PCB" onerror="this.style.display='none'" />
+        <video controls src="assets/fsae_video.mp4" onerror="this.style.display='none'"></video>
+      </div>
+
+      <h4>Overview</h4>
+      <p>Designed, built, and tested an electric racing vehicle from scratch for a competition at the Michigan International Speedway.</p>
+
+      <h4>Key Contributions</h4>
+      <ul>
+        <li>Assisted in integration of LV wiring harnesses, battery packs, and power distribution units into the car.</li>
+        <li>Designed the TSAL System along with other system PCBs on EasyEDA.</li>
+        <li>Managed team resources, ensuring timely delivery of components and maintaining high quality standards.</li>
+      </ul>
+
+      <div class="modal-tags">
+        <span class="pill">Formula SAE</span>
+        <span class="pill">EV</span>
+        <span class="pill">PCB Design</span>
+        <span class="pill">EasyEDA</span>
+        <span class="pill">Battery Systems</span>
+      </div>
+    </div>
+  </template>
+
+  <!-- Modal: MasterCard -->
+  <template id="modal-mastercard">
+    <div class="modal-inner">
+      <span class="modal-eyebrow">AI / ML · Sep – Dec 2023</span>
+      <h2>MasterCard AI Exploration Research Project</h2>
+      <p class="modal-role">AI Intern · MasterCard</p>
+
+      <div class="modal-media">
+        <img src="assets/mastercard.jpg" alt="MasterCard AI" onerror="this.style.display='none'" />
+        <img src="assets/mastercard_results.jpg" alt="ML Results" onerror="this.style.display='none'" />
+      </div>
+
+      <h4>Overview</h4>
+      <p>Executed a comprehensive end-to-end AI project focused on credit card fraud detection using machine learning and NLP techniques.</p>
+
+      <h4>Key Contributions</h4>
+      <ul>
+        <li>Explored various ML algorithms including decision trees, SVM, and logistic regression.</li>
+        <li>Analyzed model performance using accuracy, precision, recall, and F1-score to fine-tune algorithm parameters.</li>
+        <li>Implemented data visualisation techniques to communicate findings and performance results to stakeholders.</li>
+      </ul>
+
+      <div class="modal-tags">
+        <span class="pill">NLP</span>
+        <span class="pill">Fraud Detection</span>
+        <span class="pill">Scikit-learn</span>
+        <span class="pill">SVM</span>
+        <span class="pill">Data Viz</span>
+      </div>
+    </div>
+  </template>
+
+  <!-- Modal: Placeholder -->
+  <template id="modal-placeholder">
+    <div class="modal-inner placeholder-modal">
+      <span class="modal-eyebrow">Coming Soon</span>
+      <h2>Next Project</h2>
+      <p><!--This slot is ready for your next adventure. Update this template in <code>index.html</code> and drop assets into the <code>assets/</code> folder.--></p>
+      <div class="modal-media">
+        <img src="assets/project8.jpg" alt="Project 8" onerror="this.style.display='none'" />
+        <model-viewer src="assets/project8_model.glb" alt="3D Model" auto-rotate camera-controls style="width:100%;height:280px;border-radius:12px;" poster="assets/project8_poster.jpg"></model-viewer>
+        <video controls src="assets/project8_video.mp4" onerror="this.style.display='none'"></video>
+      </div>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
